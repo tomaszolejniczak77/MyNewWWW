@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #1e2939;
+  color: goldenrod;
+  display: grid;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(10, 100px);
+}
+
+#nav1 {
+  grid-area: 2 / 2 / 4 / 4;
+  z-index: 0;
+}
+
+#nav0 {
+  grid-area: 3 / 6 / 4 / 10;
+  text-align: center;
+  align-self: center;
+}
+
+#nav2 {
+  grid-area: 3 / 3 / 5 / 5;
+  z-index: 1;
+}
+
+#nav3 {
+  grid-area: 2 / 7 / 3 / 9;
+  height: min-content;
+  align-self: center;
+  background-color: green;
+}
+
+#nav4 {
+  grid-area: 2 / 7 / 3 / 9;
+  height: min-content;
+  align-self: center;
+  background-color: #1e2939;
+  color: goldenrod;
+  display: none;
+}
