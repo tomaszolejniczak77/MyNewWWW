@@ -1,44 +1,119 @@
 * {
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
 }
 
 body {
+  background: black;
+  color: goldenrod;
   height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #1e2939;
-  color: goldenrod;
-  display: grid;
-  grid-template-columns: repeat(10, 100px);
-  grid-template-rows: repeat(10, 100px);
+  width: 100%;
+  height: 150px;
 }
 
-#nav1 {
-  grid-area: 2 / 2 / 4 / 4;
-  z-index: 0;
+.myLogo {
+  padding-left: 20px;
 }
 
-#nav0 {
-  grid-area: 3 / 6 / 4 / 10;
-  text-align: center;
-  align-self: center;
+nav ul {
+  display: flex;
+  align-items: center;
 }
 
-#nav2 {
-  grid-area: 3 / 3 / 5 / 5;
-  z-index: 1;
+nav ul li {
+  list-style-type: none;
+  padding-right: 20px;
+  filter: brightness(70%);
 }
 
-#nav3 {
-  grid-area: 2 / 7 / 3 / 9;
-  height: min-content;
-  align-self: center;
-  background-color: green;
+nav ul li:hover {
+  filter: brightness(100%);
 }
 
-#nav4 {
-  grid-area: 2 / 7 / 3 / 9;
-  height: min-content;
-  align-self: center;
-  background-color: #1e2939;
-  color: goldenrod;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a i {
+  color: yellow;
+  padding-right: 5px;
+}
+
+#secOne img {
+  width: 100%;
+  height: auto;
+}
+
+#check {
   display: none;
+}
+
+.checkbtn {
+  display: none;
+}
+
+footer {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .checkbtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    position: absolute;
+    top: 150px;
+    background: #2c3e50;
+    width: 100%;
+    height: 30vh;
+    left: -100%;
+    transition: all 1s;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 0;
+    filter: brightness(100%);
+  }
+
+  #liPogoda {
+    padding-top: 15px;
+    padding-left: 3px;
+  }
+
+  .checkbtn i {
+    color: #0082e6;
+    padding-right: 2rem;
+  }
+
+  nav ul.active {
+    left: 0;
+  }
+
+  #footer {
+    margin-top: 50px;
+    display: none;
+  }
+  .myPhoto {
+    display: flex;
+    justify-content: center;
+  }
 }

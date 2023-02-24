@@ -5,18 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>www Tomasz Olejniczak 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/58537081b9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body id="body">
-    <h1 id="nav0">My new version of WWW will be here soon</h1>
+  <body>
+    <nav>
+      <img
+        class="myLogo"
+        src="img/logo_transparent.png"
+        width="220"
+        height="200"
+        alt="my logo"
+      />
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"
+        ><i class="fa-solid fa-bars fa-2xl"></i
+      ></label>
+      <ul id="menu">
+        <li>
+          <a href="https://www.youtube.com/@tomaszolejniczak77" target="_blank"
+            ><img
+              src="img/logoYT.png"
+              alt="logo youTube"
+              width="42"
+              height="42"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/otomek77/" target="_blank"
+            ><img
+              src="img/instagram.png"
+              alt="logo instagram"
+              width="40"
+              height="40"
+          /></a>
+        </li>
+        <li id="liPogoda">
+          <a href="Pogoda/index.html"
+            ><i class="fa-regular fa-sun fa-2xl"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-    <img id="nav1" src="img/logo_200_200.png" alt="My logo" />
-    <img id="nav2" src="img/logo_200_200.png" alt="My logo" />
+    <main>
+      <section id="secOne" class="active">
+        <img id="dronWlocie" src="img/dronWlocie__HD.jpg" alt="dron w locie" />
+      </section>
 
-    <button id="nav3" onclick="colorOfBackground()">
-      Green color of background
-    </button>
-    <button id="nav4" onclick="defaultBackgrond()">Default background</button>
+      <section></section>
+    </main>
+
+    <footer id="footer">
+      <div class="myPhoto">
+        <img src="img/ja1.jpg" alt="me on photo" />
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: black;
+  color: goldenrod;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+nav a {
+  color: #0082e6;
+}
+
+#pogoda {
+  color: goldenrod;
+}
+
+#weather {
+  display: none;
+  justify-content: space-around;
+}
+
+canvas {
+  background-color: whitesmoke;
+}
+
+#chart {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
+}
+
+#myChart {
+  justify-self: center;
+}
+
+#myChart1 {
+  justify-self: center;
+}
+
+@media (max-width: 600px) {
+  #chart {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
